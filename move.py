@@ -10,6 +10,11 @@ class Move:
     def is_valid(self):
         return 1 <= self._value <= 9
 
+    #         col0 col1 col2
+    # row 0:  | 1 | 2 | 3 |
+    # row 1:  | 4 | 5 | 6 |
+    # row 2:  | 7 | 8 | 9 |
+
     def get_row(self):
         if self._value in (1, 2, 3):
             return 0  # first row
@@ -25,6 +30,8 @@ class Move:
             return 1  # second column
         else:
             return 2  # third column
+
+
 
 
 
